@@ -1,0 +1,8 @@
+<p>Meet your Crud monsters!</p>
+<h1> <% @cruds.each do |crud| %></h1>
+<h1> Name: <%= crud.name %> </h1>
+<h2> Color: <%= crud.color %> </h2>
+<h2> Level of cruddiness: <%= crud.level %> </h2>
+<% end %>
+
+<p>Dont't like what you see? <a href="cruds/crud:id">Click here.</a></p>

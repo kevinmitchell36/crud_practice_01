@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get "cruds" => "cruds#index"
+  get "cruds/crud:id" => "cruds#new"
+  post "cruds/crud:id" => "cruds#create"
+  get "cruds/crud:id" => "cruds#show"
 end
